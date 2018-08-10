@@ -5,15 +5,14 @@ public class MultiExceptionCatchExample {
 	public static void main(String[] args) {
 		try {
 			someMethod(1);
-			System.out.println("Hello");
+			System.out.println("Hello World");
 		} catch (FirstException | SecondException e) {
 			e.printStackTrace();
 		}
 
 	}
 
-	public static void someMethod(int i)
-			throws FirstException, SecondException {
+	public static void someMethod(int i) throws FirstException, SecondException {
 		if (i == 1) {
 			throw new FirstException();
 		} else if (i == 2) {
