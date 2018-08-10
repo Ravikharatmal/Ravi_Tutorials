@@ -5,6 +5,7 @@ public class MultiExceptionCatchExample {
 	public static void main(String[] args) {
 		try {
 			someMethod(1);
+			System.out.println("Hello");
 		} catch (FirstException | SecondException e) {
 			e.printStackTrace();
 		}
